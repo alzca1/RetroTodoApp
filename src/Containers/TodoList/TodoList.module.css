@@ -1,0 +1,41 @@
+.TodoList {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+input {
+  background-color: black;
+  width: 730px;
+  border: none;
+  color: white;
+  transition: 1.7s ease-in-out;
+  outline-color: black;
+  outline-offset: 0px; 
+}
+
+button {
+  background-color: black;
+  color: blue;
+  font-weight: 800;
+  text-transform: uppercase;
+  width: 120px;
+  border: 1px solid blue;
+}
+
+input:focus {
+  outline-color: yellow;
+  outline-offset: 0px; 
+  border:1px solid yellow;
+  color: white;
+  box-shadow: none; 
+}
+
+.Done{
+  background-color: green; 
+}
+
+.notDone{
+  color: white; 
+}
