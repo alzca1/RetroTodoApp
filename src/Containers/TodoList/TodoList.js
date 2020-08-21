@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import Todo from "../../Components/Todo/Todo";
+import Aux from "../../hoc/Aux";
+import Modal from "../../UI/Modal/Modal";
+import TodoInfo from "../../Components/TodoInfo/TodoInfo";
 import classes from "./TodoList.module.css";
 
 class TodoList extends Component {
@@ -26,6 +29,8 @@ class TodoList extends Component {
         done: false,
       },
     ],
+    showInfo: false,
+    showInfoIndex: 0,
   };
 
   addTodoHandler = (event) => {
@@ -63,6 +68,17 @@ class TodoList extends Component {
     const todos = this.state.todos.slice();
     todos[index].action = newAction;
     this.setState({ todos: todos });
+    console.log(this.state.todos);
+  };
+
+  toggleTodoInfoHandler = (index) => {
+    if (!index) {
+      this.setState({ showInfoIndex: 0 });
+    } else {
+      this.setState({ showInfoIndex: index });
+    }
+    const currentStatus = this.state.showInfo;
+    this.setState({ showInfo: !currentStatus });
   };
 
   render() {
@@ -75,20 +91,28 @@ class TodoList extends Component {
           clickedDone={() => this.doneTodoToggleHandler(index)}
           done={this.state.todos[index].done}
           editTodo={(event) => this.editTodoHandler(event, index)}
+          clickedInfo={() => this.toggleTodoInfoHandler(index)}
         />
       );
     });
 
     return (
-      <div className={classes.TodoList}>
-        {todos}
+      <Aux>
+        <Modal show={this.state.showInfo}>
+          <TodoInfo
+            todos={this.state.todos}
+            todoIndex={this.state.showInfoIndex}
+            show={() => this.toggleTodoInfoHandler(this.state.showInfoIndex)}
+            editAction={(event)=> this.editTodoHandler(event, this.state.showInfoIndex)}
+          />
+        </Modal>
+        <div className={classes.TodoList}>{todos}</div>
         <div>
           <form onSubmit={this.addTodoHandler}>
             <input type="text" placeholder="Enter the action" name="field" />
-            <button>Submit</button>
           </form>
         </div>
-      </div>
+      </Aux>
     );
   }
 }

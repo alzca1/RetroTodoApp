@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import classes from "./Todo.module.css";
+import EditableAction from './EditableAction/EditableAction'
 
 class Todo extends Component {
   state = {
@@ -46,13 +47,8 @@ class Todo extends Component {
         onMouseLeave={this.onMouseLeaveHandler}
       >
         {buttons}
-        <p
-          contentEditable={true}
-          onBlur={this.props.editTodo}
-          suppressContentEditableWarning={true}
-        >
-          {this.props.todo}
-        </p>
+        <EditableAction blur={this.props.editTodo} text={this.props.todo} />
+    
       </div>
     );
   }

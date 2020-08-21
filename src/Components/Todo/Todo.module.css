@@ -7,6 +7,7 @@
   transition: 0.2s ease-in;
   color: white;
   display: flex;
+  flex-flow: column; 
   justify-content: center;
 }
 
@@ -29,10 +30,15 @@
 }
 
 .Button {
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
+  line-height: 10px; 
   border-radius: 50%;
   font-size: 0.7em;
+  margin: 3px;
+  text-align: center;
+  display: block;
+  cursor: pointer;
 }
 
 .deleteButton {
@@ -43,7 +49,7 @@
 .doneButton {
   border: 1px solid greenyellow;
   color: greenyellow;
-  font-weight: 600;
+  
 }
 
 .infoButton {
@@ -54,6 +60,7 @@
 
 .Buttons {
   display: flex;
+  margin: 6px;
 }
 
 [contenteditable] {
@@ -62,5 +69,6 @@
 
 [contenteditable]:focus {
   color: green;
+  font-size: 16px;
   font-weight: 600;
 }

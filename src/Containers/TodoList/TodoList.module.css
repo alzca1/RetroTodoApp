@@ -1,18 +1,23 @@
 .TodoList {
   margin: 0 auto;
+  height: 100%;
   display: flex;
   flex-flow: column;
   align-items: center;
+  padding-bottom: 2vh; 
 }
 
 input {
   background-color: black;
-  width: 730px;
+  width: 78%;
+  padding: 2vh;
   border: none;
   color: white;
   transition: 1.7s ease-in-out;
   outline-color: black;
-  outline-offset: 0px; 
+  outline-offset: 0px;
+  margin: 2.5vh 0;
+  font-size: 16px;
 }
 
 button {
