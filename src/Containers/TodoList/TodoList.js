@@ -12,21 +12,37 @@ class TodoList extends Component {
         action: "Cleaning the dishes",
         color: "red",
         done: false,
+        dueDate: "01/01/2021",
+        dueHour: "13:30",
+        priority: "low",
+        notes: "lorem ipsum" 
       },
       {
         action: "Do the Shopping",
         color: "yellow",
         done: false,
+        dueDate: "01/01/2021",
+        dueHour: "13:30",
+        priority: "low",
+        notes: "lorem ipsum" 
       },
       {
         action: "Taking the dog out for a walk",
         color: "green",
         done: false,
+        dueDate: "01/01/2021",
+        dueHour: "13:30",
+        priority: "low",
+        notes: "lorem ipsum" 
       },
       {
         action: "Hang up the clothes",
         color: "red",
         done: false,
+        dueDate: "01/01/2021",
+        dueHour: "13:30",
+        priority: "low",
+        notes: "lorem ipsum" 
       },
     ],
     showInfo: false,
@@ -37,10 +53,12 @@ class TodoList extends Component {
     event.preventDefault();
     const form = event.target;
     const action = event.target.field.value;
+    const date = new Date().toISOString();
     if (action) {
       const newTodo = {
         action: event.target.field.value,
         done: false,
+        dueDate: date
       };
       const todos = this.state.todos;
       todos.push(newTodo);
@@ -71,6 +89,11 @@ class TodoList extends Component {
     console.log(this.state.todos);
   };
 
+  editDateHandler = (event, index) => {
+   
+    console.log(event.currentTarget.value)
+  }
+
   toggleTodoInfoHandler = (index) => {
     if (!index) {
       this.setState({ showInfoIndex: 0 });
@@ -85,12 +108,13 @@ class TodoList extends Component {
     const todos = this.state.todos.map((todo, index) => {
       return (
         <Todo
-          todo={todo.action}
+          todo={todo}
           key={index}
           clickedDelete={() => this.removeTodoHandler(index)}
           clickedDone={() => this.doneTodoToggleHandler(index)}
           done={this.state.todos[index].done}
           editTodo={(event) => this.editTodoHandler(event, index)}
+          
           clickedInfo={() => this.toggleTodoInfoHandler(index)}
         />
       );
@@ -104,6 +128,7 @@ class TodoList extends Component {
             todoIndex={this.state.showInfoIndex}
             show={() => this.toggleTodoInfoHandler(this.state.showInfoIndex)}
             editAction={(event)=> this.editTodoHandler(event, this.state.showInfoIndex)}
+            editDate={(event)=> this.editDateHandler(event,this.state.showInfoIndex)}
           />
         </Modal>
         <div className={classes.TodoList}>{todos}</div>

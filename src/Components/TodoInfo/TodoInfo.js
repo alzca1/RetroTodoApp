@@ -16,10 +16,10 @@ const todoInfo = (props) => {
         blur={props.editAction}
       />
       <div className={classes.TodoInfoDue}>
-        <div className={classes.TodoInfoDueItem}>Due Date</div>
-        <div className={classes.TodoInfoDueItem}>Due Hour</div>
+        <input className={classes.TodoInfoDueItem} type="date" onBlur={props.editDate} defaultValue={new Date().toISOString().slice(0,10)} />
+        <input className={classes.TodoInfoDueItem} type="time"  />
       </div>
-      <div className={classes.TodoInfoPriority}>
+      <div className={classes.TodoInfoPriority }>
         <button className={classes.TodoInfoButton}>Low</button>
         <button className={classes.TodoInfoButton}>Medium</button>
         <button className={classes.TodoInfoButton}>High</button>

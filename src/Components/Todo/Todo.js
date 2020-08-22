@@ -47,8 +47,8 @@ class Todo extends Component {
         onMouseLeave={this.onMouseLeaveHandler}
       >
         {buttons}
-        <EditableAction blur={this.props.editTodo} text={this.props.todo} />
-    
+        <EditableAction blur={this.props.editTodo} text={this.props.todo.action} />
+        <small>{this.props.todo.dueDate.toLocaleDateString} {this.props.todo.dueHour}</small>
       </div>
     );
   }
