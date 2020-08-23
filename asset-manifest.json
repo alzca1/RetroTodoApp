@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/RetroTodoApp/static/css/main.911795a7.chunk.css",
+    "main.js": "/RetroTodoApp/static/js/main.9bc328c9.chunk.js",
+    "main.js.map": "/RetroTodoApp/static/js/main.9bc328c9.chunk.js.map",
+    "runtime-main.js": "/RetroTodoApp/static/js/runtime-main.031e0c7b.js",
+    "runtime-main.js.map": "/RetroTodoApp/static/js/runtime-main.031e0c7b.js.map",
+    "static/js/2.e68c549c.chunk.js": "/RetroTodoApp/static/js/2.e68c549c.chunk.js",
+    "static/js/2.e68c549c.chunk.js.map": "/RetroTodoApp/static/js/2.e68c549c.chunk.js.map",
+    "index.html": "/RetroTodoApp/index.html",
+    "precache-manifest.ad3f5d49f608173b0e9b50136dd0fe21.js": "/RetroTodoApp/precache-manifest.ad3f5d49f608173b0e9b50136dd0fe21.js",
+    "service-worker.js": "/RetroTodoApp/service-worker.js",
+    "static/css/main.911795a7.chunk.css.map": "/RetroTodoApp/static/css/main.911795a7.chunk.css.map",
+    "static/js/2.e68c549c.chunk.js.LICENSE.txt": "/RetroTodoApp/static/js/2.e68c549c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.031e0c7b.js",
+    "static/js/2.e68c549c.chunk.js",
+    "static/css/main.911795a7.chunk.css",
+    "static/js/main.9bc328c9.chunk.js"
+  ]
+}
