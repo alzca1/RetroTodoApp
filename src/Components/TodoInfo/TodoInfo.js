@@ -1,6 +1,7 @@
 import React from "react";
 import EditableAction from "../Todo/EditableAction/EditableAction";
 
+
 import classes from "./TodoInfo.module.css";
 
 const todoInfo = (props) => {
@@ -16,8 +17,9 @@ const todoInfo = (props) => {
         blur={props.editAction}
       />
       <div className={classes.TodoInfoDue}>
-        <input className={classes.TodoInfoDueItem} type="date" onBlur={props.editDate} defaultValue={new Date().toISOString().slice(0,10)} />
-        <input className={classes.TodoInfoDueItem} type="time"  />
+        
+        <input className={classes.TodoInfoDueItem} type="date" onChange={props.editDate} value={props.todos[props.todoIndex].dueDate} />
+        <input className={classes.TodoInfoDueItem} type="time" onChange={props.editTime} value={props.todos[props.todoIndex].dueTime}  />
       </div>
       <div className={classes.TodoInfoPriority }>
         <button className={classes.TodoInfoButton}>Low</button>

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import classes from "./Todo.module.css";
 import EditableAction from './EditableAction/EditableAction'
+import * as moment from 'moment';
+import 'moment/locale/es'
 
 class Todo extends Component {
   state = {
@@ -48,7 +50,7 @@ class Todo extends Component {
       >
         {buttons}
         <EditableAction blur={this.props.editTodo} text={this.props.todo.action} />
-        <small>{this.props.todo.dueDate.toLocaleDateString} {this.props.todo.dueHour}</small>
+        <small>{moment(this.props.todo.dueDate).format('l')} {this.props.todo.dueTime}</small>
       </div>
     );
   }
