@@ -1,11 +1,9 @@
 import React from "react";
 import EditableAction from "../Todo/EditableAction/EditableAction";
 
-
 import classes from "./TodoInfo.module.css";
 
 const todoInfo = (props) => {
-  
   return (
     <div className={classes.TodoInfo}>
       <h3>Todo Info</h3>
@@ -18,11 +16,28 @@ const todoInfo = (props) => {
         blur={props.editAction}
       />
       <div className={classes.TodoInfoDue}>
-        
-        <input className={classes.TodoInfoDueItem} type="date" onChange={props.editDate} value={props.todos[props.todoIndex] ? props.todos[props.todoIndex].dueDate : undefined} />
-        <input className={classes.TodoInfoDueItem} type="time" onChange={props.editTime} value={props.todos[props.todoIndex] ? props.todos[props.todoIndex].dueTime : undefined}  />
+        <input
+          className={classes.TodoInfoDueItem}
+          type="date"
+          onChange={props.editDate}
+          value={
+            props.todos[props.todoIndex]
+              ? props.todos[props.todoIndex].dueDate
+              : undefined
+          }
+        />
+        <input
+          className={classes.TodoInfoDueItem}
+          type="time"
+          onChange={props.editTime}
+          value={
+            props.todos[props.todoIndex]
+              ? props.todos[props.todoIndex].dueTime
+              : undefined
+          }
+        />
       </div>
-      <div className={classes.TodoInfoPriority }>
+      <div className={classes.TodoInfoPriority}>
         <button className={classes.TodoInfoButton}>Low</button>
         <button className={classes.TodoInfoButton}>Medium</button>
         <button className={classes.TodoInfoButton}>High</button>
