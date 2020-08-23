@@ -30,7 +30,10 @@
   cursor: pointer;
 }
 
-.TodoInfoButton:active {
+.ActiveTodoInfoButton {
+  width: 28%;
+  font-size: 0.7em;
+  cursor: pointer;
   background-color: white;
   color: blue;
   border: none;

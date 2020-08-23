@@ -38,9 +38,9 @@ const todoInfo = (props) => {
         />
       </div>
       <div className={classes.TodoInfoPriority}>
-        <button className={classes.TodoInfoButton}>Low</button>
-        <button className={classes.TodoInfoButton}>Medium</button>
-        <button className={classes.TodoInfoButton}>High</button>
+        <button className={props.todos[props.todoIndex].priority === 'low'? classes.ActiveTodoInfoButton: classes.TodoInfoButton} value="low" onClick={props.editPriority}>Low</button>
+        <button className={props.todos[props.todoIndex].priority === 'medium'? classes.ActiveTodoInfoButton: classes.TodoInfoButton} value="medium"  onClick={props.editPriority}>Medium</button>
+        <button className={props.todos[props.todoIndex].priority === 'high'? classes.ActiveTodoInfoButton: classes.TodoInfoButton} value="high" onClick={props.editPriority}>High</button>
       </div>
       <div className={classes.TodoInfoNotes}>
         <textarea rows="3" placeholder="Your notes..." onChange={props.editNote} value={props.todos[props.todoIndex]? props.todos[props.todoIndex].notes: undefined}></textarea>

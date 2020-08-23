@@ -119,6 +119,14 @@ class TodoList extends Component {
     console.log(this.state.todos)
   }
 
+  editPriorityHandler = (event, index) => {
+    const newPriority = event.currentTarget.value; 
+    const todos = this.state.todos.slice(); 
+    todos[index].priority = newPriority; 
+    this.setState({todos:todos}); 
+    console.log(this.state.todos);
+  }
+
   toggleTodoInfoHandler = (index) => {
     if (!index) {
       this.setState({ showInfoIndex: 0 });
@@ -156,7 +164,7 @@ class TodoList extends Component {
             editDate={(event)=> this.editDateHandler(event,this.state.showInfoIndex)}
             editTime={(event) => this.editTimeHandler(event, this.state.showInfoIndex)}
             editNote={(event) => this.editNotesHandler(event, this.state.showInfoIndex)}
-            
+            editPriority={(event)=> this.editPriorityHandler(event, this.state.showInfoIndex)}
           />
         </Modal>
         <div className={classes.TodoList}>{todos}</div>
