@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/RetroTodoApp/precache-manifest.a6d1139449d6327387f09e90de2c8388.js"
+  "/RetroTodoApp/precache-manifest.f9eef457ba6f3a7256ecb99a3dccc3e8.js"
 );
 
 self.addEventListener('message', (event) => {
