@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/RetroTodoApp/static/css/main.911795a7.chunk.css",
-    "main.js": "/RetroTodoApp/static/js/main.b1744ec6.chunk.js",
-    "main.js.map": "/RetroTodoApp/static/js/main.b1744ec6.chunk.js.map",
+    "main.js": "/RetroTodoApp/static/js/main.0de196ab.chunk.js",
+    "main.js.map": "/RetroTodoApp/static/js/main.0de196ab.chunk.js.map",
     "runtime-main.js": "/RetroTodoApp/static/js/runtime-main.031e0c7b.js",
     "runtime-main.js.map": "/RetroTodoApp/static/js/runtime-main.031e0c7b.js.map",
     "static/js/2.e68c549c.chunk.js": "/RetroTodoApp/static/js/2.e68c549c.chunk.js",
     "static/js/2.e68c549c.chunk.js.map": "/RetroTodoApp/static/js/2.e68c549c.chunk.js.map",
     "index.html": "/RetroTodoApp/index.html",
-    "precache-manifest.f9eef457ba6f3a7256ecb99a3dccc3e8.js": "/RetroTodoApp/precache-manifest.f9eef457ba6f3a7256ecb99a3dccc3e8.js",
+    "precache-manifest.d416a0f502eaaadbc52fbcc2a3ad0661.js": "/RetroTodoApp/precache-manifest.d416a0f502eaaadbc52fbcc2a3ad0661.js",
     "service-worker.js": "/RetroTodoApp/service-worker.js",
     "static/css/main.911795a7.chunk.css.map": "/RetroTodoApp/static/css/main.911795a7.chunk.css.map",
     "static/js/2.e68c549c.chunk.js.LICENSE.txt": "/RetroTodoApp/static/js/2.e68c549c.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.031e0c7b.js",
     "static/js/2.e68c549c.chunk.js",
     "static/css/main.911795a7.chunk.css",
-    "static/js/main.b1744ec6.chunk.js"
+    "static/js/main.0de196ab.chunk.js"
   ]
 }

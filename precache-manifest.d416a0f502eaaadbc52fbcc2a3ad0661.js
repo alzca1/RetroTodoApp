@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dd6c9c15d55a3e2329ff1e0cd7c6a9f2",
+    "revision": "caabc175d35ad6f43e2eafc0954e6e9c",
     "url": "/RetroTodoApp/index.html"
   },
   {
-    "revision": "ac32c6ba64b35fb5c9ec",
+    "revision": "757673e2e57671c8b013",
     "url": "/RetroTodoApp/static/css/main.911795a7.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/RetroTodoApp/static/js/2.e68c549c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ac32c6ba64b35fb5c9ec",
-    "url": "/RetroTodoApp/static/js/main.b1744ec6.chunk.js"
+    "revision": "757673e2e57671c8b013",
+    "url": "/RetroTodoApp/static/js/main.0de196ab.chunk.js"
   },
   {
     "revision": "84ddc3ea589d836ece0d",
