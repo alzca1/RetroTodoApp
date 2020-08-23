@@ -43,7 +43,7 @@ const todoInfo = (props) => {
         <button className={classes.TodoInfoButton}>High</button>
       </div>
       <div className={classes.TodoInfoNotes}>
-        <textarea rows="3" placeholder="Your notes..."></textarea>
+        <textarea rows="3" placeholder="Your notes..." onChange={props.editNote} value={props.todos[props.todoIndex].notes}></textarea>
       </div>
       <button onClick={props.show}>Save</button>
     </div>
