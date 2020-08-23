@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/RetroTodoApp/static/css/main.911795a7.chunk.css",
-    "main.js": "/RetroTodoApp/static/js/main.0de196ab.chunk.js",
-    "main.js.map": "/RetroTodoApp/static/js/main.0de196ab.chunk.js.map",
+    "main.css": "/RetroTodoApp/static/css/main.4b7f7b0a.chunk.css",
+    "main.js": "/RetroTodoApp/static/js/main.1fb953bc.chunk.js",
+    "main.js.map": "/RetroTodoApp/static/js/main.1fb953bc.chunk.js.map",
     "runtime-main.js": "/RetroTodoApp/static/js/runtime-main.031e0c7b.js",
     "runtime-main.js.map": "/RetroTodoApp/static/js/runtime-main.031e0c7b.js.map",
     "static/js/2.e68c549c.chunk.js": "/RetroTodoApp/static/js/2.e68c549c.chunk.js",
     "static/js/2.e68c549c.chunk.js.map": "/RetroTodoApp/static/js/2.e68c549c.chunk.js.map",
     "index.html": "/RetroTodoApp/index.html",
-    "precache-manifest.d416a0f502eaaadbc52fbcc2a3ad0661.js": "/RetroTodoApp/precache-manifest.d416a0f502eaaadbc52fbcc2a3ad0661.js",
+    "precache-manifest.d42acc02e6fea23503161586faa88723.js": "/RetroTodoApp/precache-manifest.d42acc02e6fea23503161586faa88723.js",
     "service-worker.js": "/RetroTodoApp/service-worker.js",
-    "static/css/main.911795a7.chunk.css.map": "/RetroTodoApp/static/css/main.911795a7.chunk.css.map",
+    "static/css/main.4b7f7b0a.chunk.css.map": "/RetroTodoApp/static/css/main.4b7f7b0a.chunk.css.map",
     "static/js/2.e68c549c.chunk.js.LICENSE.txt": "/RetroTodoApp/static/js/2.e68c549c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.031e0c7b.js",
     "static/js/2.e68c549c.chunk.js",
-    "static/css/main.911795a7.chunk.css",
-    "static/js/main.0de196ab.chunk.js"
+    "static/css/main.4b7f7b0a.chunk.css",
+    "static/js/main.1fb953bc.chunk.js"
   ]
 }
