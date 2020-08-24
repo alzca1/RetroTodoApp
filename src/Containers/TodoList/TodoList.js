@@ -6,6 +6,7 @@ import TodoInfo from "../../Components/TodoInfo/TodoInfo";
 import classes from "./TodoList.module.css";
 import moment from 'moment'
 
+
 class TodoList extends Component {
   state = {
     todos: [
@@ -76,9 +77,11 @@ class TodoList extends Component {
   };
 
   removeTodoHandler = (todoId) => {
+    
     const todos = this.state.todos.slice();
     todos.splice(todoId, 1);
     this.setState({ todos: todos });
+    
   };
 
   doneTodoToggleHandler = (todoId) => {

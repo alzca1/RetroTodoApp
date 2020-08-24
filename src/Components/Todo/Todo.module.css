@@ -1,6 +1,7 @@
 .Todo {
   border: 1px solid blue;
   width: 80vw;
+  max-height: 0;
   border-radius: 10px;
   margin: 6px 0;
   box-shadow: 1px 2px 3px #1329f0;
@@ -9,6 +10,23 @@
   display: flex;
   flex-flow: column; 
   justify-content: center;
+  transform: translateX(-200%);
+  animation:
+  openSpace 0.2s ease forwards, 
+  moveIn 0.3s 0.2s ease forwards
+}
+
+@keyframes openSpace {
+  to{
+    max-height: 100px;
+  }
+}
+
+@keyframes moveIn {
+  to{
+    opacity: 1; 
+    transform: translateX(0)
+  }
 }
 
 .TodoDone {
