@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/RetroTodoApp/static/css/main.4b7f7b0a.chunk.css",
-    "main.js": "/RetroTodoApp/static/js/main.1fb953bc.chunk.js",
-    "main.js.map": "/RetroTodoApp/static/js/main.1fb953bc.chunk.js.map",
+    "main.css": "/RetroTodoApp/static/css/main.5671a668.chunk.css",
+    "main.js": "/RetroTodoApp/static/js/main.c00c91d1.chunk.js",
+    "main.js.map": "/RetroTodoApp/static/js/main.c00c91d1.chunk.js.map",
     "runtime-main.js": "/RetroTodoApp/static/js/runtime-main.031e0c7b.js",
     "runtime-main.js.map": "/RetroTodoApp/static/js/runtime-main.031e0c7b.js.map",
-    "static/js/2.e68c549c.chunk.js": "/RetroTodoApp/static/js/2.e68c549c.chunk.js",
-    "static/js/2.e68c549c.chunk.js.map": "/RetroTodoApp/static/js/2.e68c549c.chunk.js.map",
+    "static/js/2.a9af1bfb.chunk.js": "/RetroTodoApp/static/js/2.a9af1bfb.chunk.js",
+    "static/js/2.a9af1bfb.chunk.js.map": "/RetroTodoApp/static/js/2.a9af1bfb.chunk.js.map",
     "index.html": "/RetroTodoApp/index.html",
-    "precache-manifest.d42acc02e6fea23503161586faa88723.js": "/RetroTodoApp/precache-manifest.d42acc02e6fea23503161586faa88723.js",
+    "precache-manifest.5bff4025a89918b98a05c50614f6462f.js": "/RetroTodoApp/precache-manifest.5bff4025a89918b98a05c50614f6462f.js",
     "service-worker.js": "/RetroTodoApp/service-worker.js",
-    "static/css/main.4b7f7b0a.chunk.css.map": "/RetroTodoApp/static/css/main.4b7f7b0a.chunk.css.map",
-    "static/js/2.e68c549c.chunk.js.LICENSE.txt": "/RetroTodoApp/static/js/2.e68c549c.chunk.js.LICENSE.txt"
+    "static/css/main.5671a668.chunk.css.map": "/RetroTodoApp/static/css/main.5671a668.chunk.css.map",
+    "static/js/2.a9af1bfb.chunk.js.LICENSE.txt": "/RetroTodoApp/static/js/2.a9af1bfb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.031e0c7b.js",
-    "static/js/2.e68c549c.chunk.js",
-    "static/css/main.4b7f7b0a.chunk.css",
-    "static/js/main.1fb953bc.chunk.js"
+    "static/js/2.a9af1bfb.chunk.js",
+    "static/css/main.5671a668.chunk.css",
+    "static/js/main.c00c91d1.chunk.js"
   ]
 }
